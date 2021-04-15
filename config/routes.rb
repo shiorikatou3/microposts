@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     end
   end
   
-  resources :microposts, only: [:create, :destroy]
+  resources :microposts, only: [:create, :destroy]  # index 追加で投稿失敗後ページ更新可能
   resources :relationships, only: [:create, :destroy]
 end
 
